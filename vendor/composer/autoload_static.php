@@ -4,10 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
+class ComposerStaticInit37b2b7766470ab4e55b634a8cca40e3c
 {
     public static $files = array (
+        '841780ea2e1d6545ea3a253239d59c05' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/functions.php',
         '1cfd2761b63b0a29ed23657ea394cb2d' => __DIR__ . '/..' . '/topthink/think-captcha/src/helper.php',
+        '6bfa2db14bcd36db12d0b2121e50b8f2' => __DIR__ . '/..' . '/zoujingli/think-library/common.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -15,6 +17,10 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         array (
             'think\\composer\\' => 15,
             'think\\captcha\\' => 14,
+        ),
+        'l' => 
+        array (
+            'library\\' => 8,
         ),
         'a' => 
         array (
@@ -31,6 +37,10 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         array (
             'Symfony\\Component\\OptionsResolver\\' => 34,
         ),
+        'Q' => 
+        array (
+            'Qiniu\\' => 6,
+        ),
         'O' => 
         array (
             'OSS\\' => 4,
@@ -38,6 +48,10 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         'E' => 
         array (
             'Endroid\\QrCode\\' => 15,
+        ),
+        'A' => 
+        array (
+            'AliPay\\' => 7,
         ),
     );
 
@@ -49,6 +63,10 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         'think\\captcha\\' => 
         array (
             0 => __DIR__ . '/..' . '/topthink/think-captcha/src',
+        ),
+        'library\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zoujingli/think-library/library',
         ),
         'app\\' => 
         array (
@@ -76,6 +94,10 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         array (
             0 => __DIR__ . '/..' . '/symfony/options-resolver',
         ),
+        'Qiniu\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu',
+        ),
         'OSS\\' => 
         array (
             0 => __DIR__ . '/..' . '/aliyuncs/oss-sdk-php/src/OSS',
@@ -84,9 +106,20 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         array (
             0 => __DIR__ . '/..' . '/endroid/qr-code/src',
         ),
+        'AliPay\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zoujingli/wechat-developer/AliPay',
+        ),
     );
 
     public static $classMap = array (
+        'AliPay\\App' => __DIR__ . '/..' . '/zoujingli/wechat-developer/AliPay/App.php',
+        'AliPay\\Bill' => __DIR__ . '/..' . '/zoujingli/wechat-developer/AliPay/Bill.php',
+        'AliPay\\Pos' => __DIR__ . '/..' . '/zoujingli/wechat-developer/AliPay/Pos.php',
+        'AliPay\\Scan' => __DIR__ . '/..' . '/zoujingli/wechat-developer/AliPay/Scan.php',
+        'AliPay\\Transfer' => __DIR__ . '/..' . '/zoujingli/wechat-developer/AliPay/Transfer.php',
+        'AliPay\\Wap' => __DIR__ . '/..' . '/zoujingli/wechat-developer/AliPay/Wap.php',
+        'AliPay\\Web' => __DIR__ . '/..' . '/zoujingli/wechat-developer/AliPay/Web.php',
         'Endroid\\QrCode\\Bundle\\Controller\\QrCodeController' => __DIR__ . '/..' . '/endroid/qr-code/src/Bundle/Controller/QrCodeController.php',
         'Endroid\\QrCode\\Bundle\\DependencyInjection\\Configuration' => __DIR__ . '/..' . '/endroid/qr-code/src/Bundle/DependencyInjection/Configuration.php',
         'Endroid\\QrCode\\Bundle\\DependencyInjection\\EndroidQrCodeExtension' => __DIR__ . '/..' . '/endroid/qr-code/src/Bundle/DependencyInjection/EndroidQrCodeExtension.php',
@@ -166,6 +199,24 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         'OSS\\Result\\Result' => __DIR__ . '/..' . '/aliyuncs/oss-sdk-php/src/OSS/Result/Result.php',
         'OSS\\Result\\SymlinkResult' => __DIR__ . '/..' . '/aliyuncs/oss-sdk-php/src/OSS/Result/SymlinkResult.php',
         'OSS\\Result\\UploadPartResult' => __DIR__ . '/..' . '/aliyuncs/oss-sdk-php/src/OSS/Result/UploadPartResult.php',
+        'Qiniu\\Auth' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Auth.php',
+        'Qiniu\\Cdn\\CdnManager' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Cdn/CdnManager.php',
+        'Qiniu\\Config' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Config.php',
+        'Qiniu\\Etag' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Etag.php',
+        'Qiniu\\Http\\Client' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Http/Client.php',
+        'Qiniu\\Http\\Error' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Http/Error.php',
+        'Qiniu\\Http\\Request' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Http/Request.php',
+        'Qiniu\\Http\\Response' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Http/Response.php',
+        'Qiniu\\Processing\\ImageUrlBuilder' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Processing/ImageUrlBuilder.php',
+        'Qiniu\\Processing\\Operation' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Processing/Operation.php',
+        'Qiniu\\Processing\\PersistentFop' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Processing/PersistentFop.php',
+        'Qiniu\\Rtc\\AppClient' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Rtc/AppClient.php',
+        'Qiniu\\Storage\\ArgusManager' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Storage/ArgusManager.php',
+        'Qiniu\\Storage\\BucketManager' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Storage/BucketManager.php',
+        'Qiniu\\Storage\\FormUploader' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Storage/FormUploader.php',
+        'Qiniu\\Storage\\ResumeUploader' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Storage/ResumeUploader.php',
+        'Qiniu\\Storage\\UploadManager' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Storage/UploadManager.php',
+        'Qiniu\\Zone' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/Zone.php',
         'Symfony\\Component\\OptionsResolver\\Debug\\OptionsResolverIntrospector' => __DIR__ . '/..' . '/symfony/options-resolver/Debug/OptionsResolverIntrospector.php',
         'Symfony\\Component\\OptionsResolver\\Exception\\AccessException' => __DIR__ . '/..' . '/symfony/options-resolver/Exception/AccessException.php',
         'Symfony\\Component\\OptionsResolver\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/symfony/options-resolver/Exception/ExceptionInterface.php',
@@ -180,11 +231,13 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         'Symfony\\Component\\OptionsResolver\\OptionsResolver' => __DIR__ . '/..' . '/symfony/options-resolver/OptionsResolver.php',
         'We' => __DIR__ . '/..' . '/zoujingli/wechat-developer/We.php',
         'WeChat\\Card' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Card.php',
-        'WeChat\\Contracts\\BasicPay' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Contracts/BasicPay.php',
+        'WeChat\\Contracts\\BasicAliPay' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Contracts/BasicAliPay.php',
         'WeChat\\Contracts\\BasicPushEvent' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Contracts/BasicPushEvent.php',
         'WeChat\\Contracts\\BasicWeChat' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Contracts/BasicWeChat.php',
+        'WeChat\\Contracts\\BasicWePay' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Contracts/BasicWePay.php',
         'WeChat\\Contracts\\DataArray' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Contracts/DataArray.php',
         'WeChat\\Contracts\\DataError' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Contracts/DataError.php',
+        'WeChat\\Contracts\\MyCurlFile' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Contracts/MyCurlFile.php',
         'WeChat\\Contracts\\Tools' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Contracts/Tools.php',
         'WeChat\\Custom' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Custom.php',
         'WeChat\\Exceptions\\InvalidArgumentException' => __DIR__ . '/..' . '/zoujingli/wechat-developer/WeChat/Exceptions/InvalidArgumentException.php',
@@ -239,8 +292,16 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         'app\\admin\\controller\\Node' => __DIR__ . '/../..' . '/application/admin/controller/Node.php',
         'app\\admin\\controller\\Plugs' => __DIR__ . '/../..' . '/application/admin/controller/Plugs.php',
         'app\\admin\\controller\\User' => __DIR__ . '/../..' . '/application/admin/controller/User.php',
+        'app\\admin\\middleware\\Auth' => __DIR__ . '/../..' . '/application/admin/middleware/Auth.php',
         'app\\index\\controller\\Demo' => __DIR__ . '/../..' . '/application/index/controller/Demo.php',
         'app\\index\\controller\\Index' => __DIR__ . '/../..' . '/application/index/controller/Index.php',
+        'app\\service\\controller\\api\\Client' => __DIR__ . '/../..' . '/application/service/controller/api/Client.php',
+        'app\\service\\controller\\api\\Push' => __DIR__ . '/../..' . '/application/service/controller/api/Push.php',
+        'app\\service\\handler\\Publish' => __DIR__ . '/../..' . '/application/service/handler/Publish.php',
+        'app\\service\\handler\\Receive' => __DIR__ . '/../..' . '/application/service/handler/Receive.php',
+        'app\\service\\handler\\Wechat' => __DIR__ . '/../..' . '/application/service/handler/Wechat.php',
+        'app\\service\\logic\\Build' => __DIR__ . '/../..' . '/application/service/logic/Build.php',
+        'app\\service\\logic\\Wechat' => __DIR__ . '/../..' . '/application/service/logic/Wechat.php',
         'app\\wechat\\controller\\Config' => __DIR__ . '/../..' . '/application/wechat/controller/Config.php',
         'app\\wechat\\controller\\Index' => __DIR__ . '/../..' . '/application/wechat/controller/Index.php',
         'app\\wechat\\controller\\api\\Client' => __DIR__ . '/../..' . '/application/wechat/controller/api/Client.php',
@@ -248,8 +309,29 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
         'app\\wechat\\handler\\BasicHandler' => __DIR__ . '/../..' . '/application/wechat/handler/BasicHandler.php',
         'app\\wechat\\handler\\ConfigHandler' => __DIR__ . '/../..' . '/application/wechat/handler/ConfigHandler.php',
         'app\\wechat\\handler\\WechatHandler' => __DIR__ . '/../..' . '/application/wechat/handler/WechatHandler.php',
+        'app\\wechat\\service\\BuildService' => __DIR__ . '/../..' . '/application/wechat/service/BuildService.php',
         'app\\wechat\\service\\PublishService' => __DIR__ . '/../..' . '/application/wechat/service/PublishService.php',
         'app\\wechat\\service\\ReceiveService' => __DIR__ . '/../..' . '/application/wechat/service/ReceiveService.php',
+        'library\\Controller' => __DIR__ . '/..' . '/zoujingli/think-library/library/Controller.php',
+        'library\\File' => __DIR__ . '/..' . '/zoujingli/think-library/library/File.php',
+        'library\\driver\\Local' => __DIR__ . '/..' . '/zoujingli/think-library/library/driver/Local.php',
+        'library\\driver\\Oss' => __DIR__ . '/..' . '/zoujingli/think-library/library/driver/Oss.php',
+        'library\\driver\\Qiniu' => __DIR__ . '/..' . '/zoujingli/think-library/library/driver/Qiniu.php',
+        'library\\logic\\Delete' => __DIR__ . '/..' . '/zoujingli/think-library/library/logic/Delete.php',
+        'library\\logic\\Form' => __DIR__ . '/..' . '/zoujingli/think-library/library/logic/Form.php',
+        'library\\logic\\Input' => __DIR__ . '/..' . '/zoujingli/think-library/library/logic/Input.php',
+        'library\\logic\\Logic' => __DIR__ . '/..' . '/zoujingli/think-library/library/logic/Logic.php',
+        'library\\logic\\Page' => __DIR__ . '/..' . '/zoujingli/think-library/library/logic/Page.php',
+        'library\\logic\\Query' => __DIR__ . '/..' . '/zoujingli/think-library/library/logic/Query.php',
+        'library\\logic\\Save' => __DIR__ . '/..' . '/zoujingli/think-library/library/logic/Save.php',
+        'library\\tools\\Cors' => __DIR__ . '/..' . '/zoujingli/think-library/library/tools/Cors.php',
+        'library\\tools\\Crypt' => __DIR__ . '/..' . '/zoujingli/think-library/library/tools/Crypt.php',
+        'library\\tools\\Csv' => __DIR__ . '/..' . '/zoujingli/think-library/library/tools/Csv.php',
+        'library\\tools\\Data' => __DIR__ . '/..' . '/zoujingli/think-library/library/tools/Data.php',
+        'library\\tools\\Express' => __DIR__ . '/..' . '/zoujingli/think-library/library/tools/Express.php',
+        'library\\tools\\Http' => __DIR__ . '/..' . '/zoujingli/think-library/library/tools/Http.php',
+        'library\\tools\\Node' => __DIR__ . '/..' . '/zoujingli/think-library/library/tools/Node.php',
+        'library\\tools\\Options' => __DIR__ . '/..' . '/zoujingli/think-library/library/tools/Options.php',
         'think\\captcha\\Captcha' => __DIR__ . '/..' . '/topthink/think-captcha/src/Captcha.php',
         'think\\captcha\\CaptchaController' => __DIR__ . '/..' . '/topthink/think-captcha/src/CaptchaController.php',
         'think\\composer\\Plugin' => __DIR__ . '/..' . '/topthink/think-installer/src/Plugin.php',
@@ -261,9 +343,9 @@ class ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit7cb7eac0cfef72027e8ccf101b004d46::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit37b2b7766470ab4e55b634a8cca40e3c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit37b2b7766470ab4e55b634a8cca40e3c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit37b2b7766470ab4e55b634a8cca40e3c::$classMap;
 
         }, null, ClassLoader::class);
     }

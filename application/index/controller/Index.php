@@ -35,7 +35,7 @@ class Index extends BasicAdmin
     public function bind()
     {
         $url = url('index/index/bindSuccess', '', true, true);
-        $this->redirect('@wechat/api.push/auth/redirect/' . encode($url));
+        $this->redirect('@wechat/api.push/auth/' . encode($url));
     }
 
     /**
@@ -57,8 +57,6 @@ class Index extends BasicAdmin
 
     /**
      * 微信网页授权
-     * @throws \think\Exception
-     * @throws \think\exception\PDOException
      */
     public function oauth()
     {

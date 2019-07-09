@@ -1,38 +1,24 @@
 {
-  "name": "topthink/think",
-  "description": "the new thinkphp framework",
   "type": "project",
-  "keywords": [
-    "framework",
-    "thinkphp",
-    "ORM"
-  ],
-  "homepage": "http://thinkphp.cn/",
-  "license": "Apache-2.0",
-  "authors": [
-    {
-      "name": "liu21st",
-      "email": "liu21st@gmail.com"
-    }
-  ],
+  "license": "MIT",
+  "keywords": ["thinkservice"],
+  "name": "zoujingli/think-service",
+  "description": "WeChat Open Service",
+  "homepage": "http://service.thinkadmin.top",
+  "autoload": {"psr-4": {"app\\": "application"}},
+  "authors": [{"name": "Anyon", "email": "zoujingli@qq.com"}],
+  "repositories": {"packagist": {"type": "composer", "url": "https://packagist.laravel-china.org"}},
   "require": {
     "php": ">=5.6.0",
+    "ext-soap": "*",
+    "ext-json": "*",
+    "qiniu/php-sdk": "^7.2",
     "endroid/qr-code": "^1.9",
     "topthink/framework": "5.1.*",
-    "zoujingli/ip2region": "dev-master",
     "aliyuncs/oss-sdk-php": "^2.2",
+    "topthink/think-captcha": "^2.0",
+    "zoujingli/ip2region": "dev-master",
     "zoujingli/weopen-developer": "dev-master",
-    "topthink/think-captcha": "^2.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "app\\": "application"
-    }
-  },
-  "extra": {
-    "think-path": "thinkphp"
-  },
-  "config": {
-    "preferred-install": "dist"
+    "zoujingli/think-library": "5.1.x-dev"
   }
 }
